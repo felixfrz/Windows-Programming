@@ -16,5 +16,15 @@ namespace WindowsProject
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to windows application development");
+        }
+
+        private void Form3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have clicked on the form.");
+        }
     }
 }
