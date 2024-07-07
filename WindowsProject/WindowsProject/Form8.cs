@@ -19,7 +19,7 @@ namespace WindowsProject
 
         private void Form8_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +42,14 @@ namespace WindowsProject
             if (checkBox3.Checked)
                 MessageBox.Show("CheckBox3 is selected.");
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+                MessageBox.Show("Control is selected");
+            else
+                MessageBox.Show("Control is de-selected");
         }
     }
 }
