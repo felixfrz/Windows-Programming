@@ -16,5 +16,16 @@ namespace WindowsProject
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure of closing the application.", "confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+                
+            }
+           
+        }
     }
 }
